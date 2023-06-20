@@ -22,6 +22,7 @@ final class TagList extends Select implements HasRelationship, HasRelatedValues
             fn ($item) => view('moonshine::ui.badge', [
                     'color' => 'purple',
                     'value' => $item->{$this->resourceTitleField()} ?? false,
+                    'margin' => true,
                 ]
             )->render(),
             ''
